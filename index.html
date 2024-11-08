@@ -1,0 +1,413 @@
+<!doctype html>
+<!--
+	Author by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+
+	URL: https://freehtml5.co
+-->
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Author</title>
+</head>
+
+
+<style>/* Container for all skills */
+	.skills-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		gap: 20px;
+		margin-top: 20px;
+	}
+	
+	/* Individual skill items */
+	.skill-item {
+		text-align: center;
+		border: 2px solid #ccc;
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	.skill-item:hover {
+		transform: translateY(-10px);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	}
+	
+	/* Skill images */
+	.skill-item__image img {
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		margin-bottom: 10px;
+		border-radius: 50%;
+	}
+	
+	/* Skill titles */
+	.skill-item__title {
+		font-size: 18px;
+		font-weight: bold;
+		margin: 10px 0;
+	}
+	
+	/* Rating stars */
+	.rating span {
+		font-size: 18px;
+		color: gold;
+	}
+	
+	/* Navigation buttons */
+	.skills-nav {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+	
+	.skills-nav .brand-button {
+		padding: 10px 20px;
+		background-color: #333;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+	
+	.skills-nav .brand-button:disabled {
+		background-color: #ccc;
+	}</style>
+
+
+
+
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="images/BM site logo.png" alt="site logo">
+
+
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#Section-Home">Home page</a></li>
+					<li><a href="#Section-About">about-me</a></li>
+					<li><a href="#Section-Skills">Skills</a></li>
+					<li><a href="#Section-Project">Projects</a></li>
+					<li><a href="#Section-Contact">Contact </a></li>
+
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section id="Section-Home" class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./images/Benvollens.jpeg" alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Benvollens</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">Maluleke</h2>
+
+					<span class="brand-span">Physisist, Data Scientist, Developer</span>
+
+				</div>
+				<p>Benvollens Maluleke is a physicist and data scientist with a strong background in machine learning and statistical analysis. With a passion for developing innovative solutions, he bridges the gap between complex scientific concepts and practical applications in technology and data science.</p>
+				<!-- <a href="#" class="brand-button">Read bio > </a> -->
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
+
+	<!-- About me -->
+	<section id="Section-About" class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="./images/Benvollens.jpeg" class="about-me__profile" alt="about me profile picture">
+
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>B</span>
+						<h2 class="universal-h2"> Maluleke</h2>
+
+					</div>
+					<p><strong>Benvollens Maluleke is a graduate with an MSc in Mathematical Science, focused on data science, and is now venturing into IT with a specialization in backend and API development.</strong></p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>I</span>  ’m Benvollens Maluleke, a Data Scientist and Physicist with a strong analytical background and a growing focus in the field of IT, specifically in API and backend development. With a BSc in Physical Science, an Honours in Physics, and a Master’s in Mathematical Science underway, my academic and professional journey has been rooted in using data-driven methods to solve complex scientific challenges. My recent work in machine learning has included building predictive models for materials science, using advanced techniques like XGBoost and SHAP analysis to uncover insights in perovskite materials Dataset.</p>
+
+						<h4>Author</h4>
+						<!-- <p class="p-white">See me</p> -->
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me 2</h2>
+						<p><span>A</span> s I venture deeper into IT, I’m focused on mastering backend development and API design, exploring software development life cycles, and applying Agile methodologies. My goal is to leverage both my data science and IT expertise to create robust, scalable solutions that make data accessible and actionable. 
+						</p>
+						
+						<!-- You can reference the Contact and Cv availabilituy -->
+						<!-- <h4>Author</h4> -->
+						<!-- <p class="p-white">See me</p> -->
+						<p><strong> If you’re interested in innovative data solutions or collaborative IT projects, let’s connect!</strong> </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
+
+<!-- Skills -->
+<section id="Section-Skills" class="fh5co-books">
+    <div class="site-container">
+        <h2 class="universal-h2 universal-h2-bckg">Skills</h2>
+        <div class="skills-container">
+            <!-- Skill Items -->
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/Machine Learning.jpg" alt="Machine learning">
+                </div>
+                <h4 class="skill-item__title">Machine Learning</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/SQL picture.jpg" alt="SQL">
+                </div>
+                <h4 class="skill-item__title">SQL</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/PowerBi picture.png" alt="Power BI">
+                </div>
+                <h4 class="skill-item__title">Power BI</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/P programing language.jpg" alt="R programming language">
+                </div>
+                <h4 class="skill-item__title">R Programming</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/Java css and html picture.webp" alt="Java, CSS, and HTML">
+                </div>
+                <h4 class="skill-item__title">Java, CSS, and HTML</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-item__image">
+                    <img src="./images/Generative AI picture.png" alt="Generative AI">
+                </div>
+                <h4 class="skill-item__title">Generative AI</h4>
+                <div class="rating">
+                    <span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span><span>&#9734;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons for Pagination -->
+        <div class="skills-nav">
+            <button onclick="prevSkills()" id="prevBtn" class="brand-button" disabled>Back</button>
+            <button onclick="nextSkills()" id="nextBtn" class="brand-button">Next</button>
+        </div>
+    </div>
+</section>
+            <!-- Add more skills here as needed -->
+
+        </div>
+
+        <!-- Navigation Buttons for Pagination -->
+        <div class="books-brand-button" id="showMoreContainer">
+            <button onclick="prevSkills()" id="prevBtn" class="brand-button" disabled>Back</button>
+            <button onclick="nextSkills()" id="nextBtn" class="brand-button">Next</button>
+        </div>
+    </div>
+</section>
+
+
+	<!-- Project  -->
+	<section id="Section-Project" class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">Projects</h2>
+			<div class="blog-slider blog-inner">
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog1.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>Explainable Machine Learning</h4>
+						<span>AIMS 2024</span>
+						<p>Predicting Specific heat capacity of Inorganic Perovskites and extract important features by using Explainable techinques such as SHAP and feature importance. This was aims to over come the traditional models and help improve solar cells.</p>
+					</div>
+				</div>
+
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>MMED Epidemiological Study</h4>
+						<span>AIMS 2024</span>
+						<p>This study investigates the effect of homophily on disease outbreaks and its impact on disease spread. The findings aim to provide insights to inform policy decisions for effective disease control and prevention.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>Website Development </h4>
+						<span>CapaCITI</span>
+						<p>This website is designed to help graduates kick-start their careers and make a smooth transition into the workplace. It provides relevant information, resources, and guidance to support career development and workplace adjustment.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Projects -->
+
+	<!-- Contact -->
+	<section id="Section-Contact" class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">Contact</h2>
+					<p>I am a graduate with a strong foundation in data science, physics, and machine learning, and I’m currently venturing into software development, focusing on API and backend development. My experience includes data analysis, statistical modeling, and explainable machine learning, with a commitment to continuous learning and practical application.
+						</p>
+					<!-- <img src="./images/quotes.svg" alt="quotes svg"> -->
+					<!-- <h4>David Dixon</h4>
+					<p>Reader</p> -->
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">Project access</h2>
+					<p><strong>Below are the links to my project and CV.</strong> </p>
+					<!-- <img src="./images/quotes.svg" alt="quotes svg"> -->
+					<!-- <h4>David Dixon</h4>
+					<p>Reader</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact end -->
+
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+				</div>
+				<!-- <h5>Share it!</h5> -->
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
+
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="./images/footer-img.jpg" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: 060-900-7459</p>
+						<p>Email : Benvollens456@gmail.com</p>
+						<div class="social-icons">
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form class="contact-form">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<textarea></textarea>
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2024 Author | Design by Benvollens MAluleke | All rights Reserved.</p>
+				<!-- <div class="footer-bottom__img">
+					<img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
+				</div> -->
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
