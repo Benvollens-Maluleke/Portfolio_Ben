@@ -100,4 +100,39 @@ $(window).scroll(function(e){
             counta = 1;
         }
     }
-});
+})
+
+let currentSlide = 0;
+const itemsPerPage = 5; // Display 5 items per page
+
+function nextSkills() {
+  const skillsContainer = document.querySelector('.skills-container');
+  const skillItems = document.querySelectorAll('.skill-item');
+  const totalSlides = Math.ceil(skillItems.length / itemsPerPage);
+
+  if (currentSlide < totalSlides - 1) {
+    currentSlide++;
+    skillsContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  updateButtons();
+}
+
+function prevSkills() {
+  const skillsContainer = document.querySelector('.skills-container');
+
+  if (currentSlide > 0) {
+    currentSlide--;
+    skillsContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  updateButtons();
+}
+
+function updateButtons() {
+  document.getElementById('prevBtn').disabled = currentSlide === 0;
+  const skillItems = document.querySelectorAll('.skill-item');
+  const totalSlides = Math.ceil(skillItems.length / itemsPerPage);
+  document.getElementById('nextBtn').disabled = currentSlide >= totalSlides - 1;
+}
+;
